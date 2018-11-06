@@ -11,7 +11,7 @@ data = { 'year' : year,
 df = pd.DataFrame(data,columns = ['year','city'])
 frame1 = df.drop_duplicates(subset=None, keep='first', inplace=False)
 count = frame1.city.value_counts()
-print(count)
+#print(count) 
 
 l = count.head(4)
 print(l)
